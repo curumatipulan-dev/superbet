@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Superbet" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/superbet_red</item>
+        <item name="colorPrimaryVariant">@color/superbet_red_dark</item>
+        <item name="colorOnPrimary">@color/superbet_white</item>
+        <item name="android:windowBackground">@color/superbet_black</item>
+        <item name="android:statusBarColor">@color/superbet_black</item>
+        <item name="android:navigationBarColor">@color/superbet_black</item>
+    </style>
+
+    <style name="Theme.Superbet.Splash" parent="Theme.Superbet">
+        <item name="android:windowBackground">@color/superbet_black</item>
+    </style>
+</resources>
