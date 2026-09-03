@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="superbet_red">#E31837</color>
+    <color name="superbet_red_dark">#B31230</color>
+    <color name="superbet_white">#FFFFFF</color>
+    <color name="superbet_black">#0A0A0A</color>
+    <color name="superbet_gray">#666666</color>
+    <color name="superbet_green">#00C853</color>
+    <color name="superbet_green_dark">#00A844</color>
+    <color name="gradient_start">#FF1744</color>
+    <color name="gradient_end">#2979FF</color>
+</resources>
