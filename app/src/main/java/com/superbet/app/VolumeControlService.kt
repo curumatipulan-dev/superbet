@@ -17,9 +17,9 @@ class VolumeControlService : Service() {
     
     private val volumeReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context, intent: Intent) {
-            if (intent.action == AudioManager.VOLUME_CHANGED_ACTION) {
+            if (intent.action == "android.media.VOLUME_CHANGED_ACTION") {
                 val streamType = intent.getIntExtra(AudioManager.EXTRA_VOLUME_STREAM_TYPE, -1)
-                val volume = intent.getIntExtra(AudioManager.EXTRA_VOLUME_STREAM_VALUE, -1)
+                val volume = intent.getIntExtra("android.media.EXTRA_VOLUME_STREAM_VALUE", -1)
                 
                 if (streamType == AudioManager.STREAM_MUSIC) {
                     handleVolumeChange(volume)
@@ -30,7 +30,7 @@ class VolumeControlService : Service() {
     
     override fun onCreate() {
         super.onCreate()
-        val filter = IntentFilter(AudioManager.VOLUME_CHANGED_ACTION)
+        val filter = IntentFilter("android.media.VOLUME_CHANGED_ACTION")
         registerReceiver(volumeReceiver, filter)
     }
     
